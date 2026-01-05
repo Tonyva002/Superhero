@@ -23,6 +23,7 @@
         android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_lg"
         app:shapeAppearanceOverlay="@style/RoundedImage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

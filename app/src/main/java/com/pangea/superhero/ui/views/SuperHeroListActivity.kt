@@ -84,14 +84,17 @@ class SuperHeroListActivity : AppCompatActivity() {
                     when (state) {
                         is SuperHeroUiState.Idle -> {
                             binding.progressBar.isVisible = false
+                            binding.tvTitle.isVisible = true
                         }
 
                         is SuperHeroUiState.Loading -> {
                             binding.progressBar.isVisible = true
+                            binding.tvTitle.isVisible = false
                         }
 
                         is SuperHeroUiState.Success -> {
                             binding.progressBar.isVisible = false
+                            binding.tvTitle.isVisible = false
                             adapter.submitList(state.heroes)
                         }
 
